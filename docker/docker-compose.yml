@@ -1,0 +1,37 @@
+# Use root/example as user/password credential
+#PARTIE CONCERNANT MYSQL
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    #command: --default-authentification-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw
+      MYSQL_USER: root
+      MYSQL_PASSWORD: my-secret-pw
+      # MYSQL_DATABASE: projetdb
+    #volumes:
+     # - mysql-data:/var/lib/mysql
+    ports:
+      - '6033:3306'
+
+  phpmyadmin:
+     #container_name: phpmyadmin
+     image: phpmyadmin/phpmyadmin:latest
+     environment:
+       PMA_HOST: mysql
+       PMA_USER: root
+       PMA_PASSWORD: my-secret-pw
+       # MYSQL_ROOT_PASSWORD: post
+     ports:
+      - '8080:80'
+
+#volumes:
+ # mysql-data:
+    
+
+# depends_on
+# https://docs.docker.com/compose/startup-order/
