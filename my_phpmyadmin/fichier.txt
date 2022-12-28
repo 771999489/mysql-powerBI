@@ -12,12 +12,12 @@ access phpMyAdmin.
 You will also need to link the container to a MySQL container, so that phpMyAdmin can connect to the database server.
 This is an example of how you can run a phpMyAdmin container using Docker:
 
-docker run --name my-phpmyadmin -d --link my-mysql:db -p 8080:80 phpmyadmin/phpmyadmin
+"docker run --name my-phpmyadmin -d --link my-mysql:db -p 8180:80 phpmyadmin/phpmyadmin"
 
 This command will just create a container named my-phpmyadmin based on the latest phpMyAdmin image and link it to a container
 named my-mysql, which should be running a MySQL server. 
 We can also use the -p option maps the container's port 80 to port 8080 on the host machine.
 
 And then we can access phpMyAdmin in a web browser. Once the container is running, you can access phpMyAdmin by visiting
- http://localhost:8080 in a web browser. 
+ http://localhost:8180 in a web browser. 
 You should see the login page for phpMyAdmin, where you can enter your MySQL username and password to log in.
