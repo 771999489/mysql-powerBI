@@ -1,1 +1,18 @@
-Recupération de l'image de mysql dans docker hub
+To find MySQL images on Docker Hub, you can use the search function on the Docker Hub website or use the docker search command 
+in the command line. For example, to search for MySQ images, you can run the following command:
+
+"docker search mysql"
+
+This will list all the available MySQL images on Docker Hub, along with information such as the number of stars,
+ the number of pulls, and the size of the image. You can then choose an image that meets your requirements and use the 
+"docker pull" command to download it to your local machine.
+
+Once you have the MySQL image downloaded, you can use the docker run command to create and start a container based on the image.
+ You can then connect to the MySQL server running in the container using a MySQL client, such as the MySQL command line client 
+GUI tool like MySQL Workbench.
+
+Here is an how to create and start a MySQL container using the docker run command:
+
+"docker run --name my-mysql -e MYSQL_ROOT_PASSWORD=my-mysql-pw -d mysql:latest"
+
+This command will create a container named my-mysql based on the latest MySQL image and set the root password to my-mysql-pw.
