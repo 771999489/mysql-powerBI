@@ -15,4 +15,8 @@ This image represents our architecture that we used for the realization of our p
 
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/architechture%20du%20projet.JPG)
 
+- comment installer ton app en utilisant docker
+- explication des conteneurs qui composent l’app déployée ( 2 paragraphes maximum par conteneur )
+- liens vers les images utilisées de docker hub
+
 
