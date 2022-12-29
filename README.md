@@ -15,8 +15,18 @@ This image represents our architecture that we used for the realization of our p
 
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/architechture%20du%20projet.JPG)
 
-- comment installer ton app en utilisant docker
+
+Installation des conteneurs
+1. POSTGRES
+A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
+PostgreSQL is a powerful, open-source object-relational database system. It has a strong reputation for reliability, data integrity, and correctness.
+You can run PostgreSQL in a container to make it easier to deploy and manage. By packaging the database software and its dependencies in a container, you can run the same container image on any host that has a container runtime, without worrying about differences in the host environment that could affect the database's operation. This makes it easier to deploy and maintain PostgreSQL in different environments, such as development, staging, and production.
+To run PostgreSQL in a container, you will need to install a container runtime (such as Docker) and then pull the PostgreSQL container image from a registry (such as Docker Hub). You can then start a container from the image and specify any necessary configuration options, such as the database name, user credentials, and network settings.
+
+the following command starts a PostgreSQL container with a default user and database, and exposes it on the host's port 5432:
+
 - explication des conteneurs qui composent l’app déployée ( 2 paragraphes maximum par conteneur )
 - liens vers les images utilisées de docker hub
+
 
 
