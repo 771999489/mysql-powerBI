@@ -49,7 +49,7 @@ To run the pgadmin image, you will need to specify a few environment variables t
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/run%20pgadmin.JPG)
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/interface%20pgadmin.JPG)
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/interface2%20pgadmin.JPG)
-3. NOTE: MYSQL AND PHPMYADMIN
+3. MYSQL AND PHPMYADMIN
 
 At the beginning, we wanted to use mysql and phpmyadmin to do the job but we had connection problems with the power bi tool and the mysql database of azure.<b>rror: mysql connector is missing</b>.when we had indeed installed the connector. So we decided with your agreement to continue the project with postgres and pgadmin
 
