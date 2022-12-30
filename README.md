@@ -52,7 +52,7 @@ To run the pgadmin image, you will need to specify a few environment variables t
 
 At the beginning, we wanted to use mysql and phpmyadmin to do the job but we had connection problems with the power bi tool and the mysql database of azure.<b>rror: mysql connector is missing</b>.when we had indeed installed the connector. So we decided with your agreement to continue the project with postgres and pgadmin
 
-explication du docker-compose.yml
+<b>Explication du docker-compose.yml</b></br>
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/dcker-compose.JPG)
 
 You can use Docker Compose to define and run a multi-container Docker application that includes both a PostgreSQL database and pgAdmin.
