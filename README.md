@@ -1,4 +1,4 @@
-<h2> Project_name : Link PostegresSQL with powerBI </h2>
+<h1><b><i> Project_name : Link PostegresSQL with powerBI </i></b></h1>
 
 Description :
 This project consists of connecting a RDBMS (Relational Database Management System) containing a database with the power bi tool that 
