@@ -7,7 +7,7 @@ Note that this database will be linked with a cloud computing platform provided 
 applications and services in the cloud and we also use Docker to run and manage containerized applications on azure.
 
 
-Architecture
+<b>Architecture</b>
 
 
 This image represents our architecture that we used for the realization of our project. Indeed, we used Postgres and PgAdmin linked via a docker-compose.yml file on a microsoft azure virtual machine. We then, using the power bi application, visualized the data from our database in Postgres.
@@ -16,7 +16,7 @@ This image represents our architecture that we used for the realization of our p
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/architechture%20du%20projet.JPG)
 
 
-Explication et Installation des conteneurs</br>
+<b>Explanation and Installation of containers<b></br>
 
 1.<b> POSTGRES</b>
 
@@ -64,7 +64,29 @@ This will start the PostgreSQL and pgAdmin containers in the background, and you
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/interface%20pgadmin.JPG)
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/interface2%20pgadmin.JPG)
 
-- liens vers les images utilisées de docker hub
+<b>Application Deployment</b></br>
+Microsoft Power BI is a business analytics platform that provides data visualization and reporting tools to help users analyze data and share insights. With Power BI, you can connect to a wide range of data sources, create interactive dashboards and reports, and share your insights with others in your organization.
+There are several different versions of Power BI available, including a free desktop version and a paid cloud-based service. The desktop version allows you to create and publish reports on your local machine, while the cloud-based service provides additional features such as collaboration and data sharing.</br>
+Once you have installed Power BI, you can connect to data sources and begin creating reports and dashboards.So we are going to connect power bi to our UniversityDB database</br>
+1. Database Explanation
+University_DB is a database that we set up as part of this project where we initially created a conceptual data model to be able to meet the objective of this project, which was to create dokerfiles in which we had to import libraries for the PostgreSQL DBMS and then create the database by inserting the different tables that will allow us to make visualizations with the different data that are there in these tables.
+In this database we have a total of five (5) tables which are: student, offering, faculty, enrollment and course.
+• Student: Inside this table we had put all the information concerning the students to know in which subject that the student is registered as well as the faculty.
+• Offering: Here in this table there is information that mentions the amount to be paid by students for each course they are registered.
+• Faculty: In this table there is information concerning all training concerning a trade.
+• Enrollment: This table concerns the list of courses that each student is enrolled in
+• Course: More precisely in this table we had inserted information concerning the different courses that a student will have to follow for each profession that he is registered.
+ERD
+![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/base%20de%20donn%C3%A9es.jpg)</br>
+2. Database connection with Power BI Desktop</br>
+![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/connexion%20%C3%A0%20la%20base%20de%20donn%C3%A9e.JPG)</br>
+![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/visualisation.JPG)
+FIN
 
+<b>links to containers</b>
+https://hub.docker.com/_/postgres
+https://hub.docker.com/r/dpage/pgadmin4/
+https://hub.docker.com/_/mysql
+https://hub.docker.com/_/phpmyadmin
 
 
