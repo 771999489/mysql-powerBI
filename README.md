@@ -27,6 +27,10 @@ You can run PostgreSQL in a container to make it easier to deploy and manage. By
 
 To run PostgreSQL in a container, you will need to install a container runtime (such as Docker) and then pull the PostgreSQL container image from a registry (such as Docker Hub). You can then start a container from the image and specify any necessary configuration options, such as the database name, user credentials, and network settings.
 
+To download the official postgres image from the Docker Hub registry, you can run the following command:
+
+<b>docker pull postgres:latest</b>
+
 the following command starts a PostgreSQL container with a default user and database, and exposes it on the host's port 5432:
 
 - explication des conteneurs qui composent l’app déployée ( 2 paragraphes maximum par conteneur )
