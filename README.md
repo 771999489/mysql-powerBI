@@ -17,7 +17,7 @@ This image represents our architecture that we used for the realization of our p
 
 
 Explication et Installation des conteneurs
-1. POSTGRES
+1.<b> POSTGRES</b>
 
 
 A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. PostgreSQL is a powerful, open-source object-relational database system. It has a strong reputation for reliability, data integrity, and correctness.
@@ -29,9 +29,25 @@ To run PostgreSQL in a container, you will need to install a container runtime (
 
 To download the official postgres image from the Docker Hub registry, you can run the following command:
 
-<b>docker pull postgres:latest</b>
+<b> docker pull postgres:latest </b>
 
 the following command starts a PostgreSQL container with a default user and database, and exposes it on the host's port 5432:
+
+<b>docker run --name my-postgres -e POSTGRES_PASSWORD=passer -d postgres:latest</b>
+
+2. <b>PgAdmin</b>
+
+
+To download the official pgadmin image from the Docker Hub registry, you can run the following command:
+
+<b>docker pull dpage/pgadmin4:latest</b>
+
+To run the pgadmin image, you will need to specify a few environment variables to configure the connection to your PostgreSQL database. You can use the <b>PGADMIN_DEFAULT_EMAIL, PGADMIN_DEFAULT_PASSWORD, and PGADMIN_LISTEN_PORT</b> environment variables to set the email address and password for the default pgAdmin user, and to specify the port that the pgAdmin web server should listen on.
+<b>docker run --name my-pgadmin -e PGADMIN_DEFAULT_EMAIL=admin@admin.com -e PGADMIN_DEFAULT_PASSWORD=root -p 5050:80 -d dpage/pgadmin4:latest
+</b>
+3. NOTE: MYSQL ANG PHPMYADMIN
+
+At the beginning, we wanted to use mysql and phpmyadmin to do the job but we had connection problems with the power bi tool and the mysql database of azure.<b>rror: mysql connector is missing</b>.when we had indeed installed the connector. So we decided with your agreement to continue the project with postgres and pgadmin
 
 - explication des conteneurs qui composent l’app déployée ( 2 paragraphes maximum par conteneur )
 - liens vers les images utilisées de docker hub
