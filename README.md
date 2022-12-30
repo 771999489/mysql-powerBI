@@ -1,4 +1,4 @@
-Project_name : Link mysql with powerBI
+Project_name : Link PostegresSQL with powerBI
 
 Description :
 This project consists of connecting a RDBMS (Relational Database Management System) containing a database with the power bi tool that 
