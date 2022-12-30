@@ -99,7 +99,7 @@ In this database we have a total of five (5) tables which are: student, offering
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/visualisation.JPG)</br>
 
 
-<b>links to containers</b></br>
+<h3><i>Links to containers</i></h3></br>
 https://hub.docker.com/_/postgres </br>
 https://hub.docker.com/r/dpage/pgadmin4/ </br>
 https://hub.docker.com/_/mysql </br>
