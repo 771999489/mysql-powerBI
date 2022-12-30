@@ -72,7 +72,7 @@ This will start the PostgreSQL and pgAdmin containers in the background, and you
 
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/interface2%20pgadmin.JPG) </br>
 
-<b>Application Deployment</b></br>
+<h1>Application Deployment</h1></br>
 
 <p>Microsoft Power BI is a business analytics platform that provides data visualization and reporting tools to help users analyze data and share insights. With Power BI, you can connect to a wide range of data sources, create interactive dashboards and reports, and share your insights with others in your organization.
 There are several different versions of Power BI available, including a free desktop version and a paid cloud-based service. The desktop version allows you to create and publish reports on your local machine, while the cloud-based service provides additional features such as collaboration and data sharing.</br>
