@@ -13,7 +13,7 @@ Architecture
 This image represents our architecture that we used for the realization of our project. Indeed, we used Postgres and PgAdmin linked via a docker-compose.yml file on a microsoft azure virtual machine. We then, using the power bi application, visualized the data from our database in Postgres.
 
 
-<center>![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/architechture%20du%20projet.JPG)</center>
+![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/architechture%20du%20projet.JPG)
 
 
 Explication et Installation des conteneurs</br>
@@ -30,7 +30,7 @@ To run PostgreSQL in a container, you will need to install a container runtime (
 
 To download the official postgres image from the Docker Hub registry, you can run the following command:
 
-<center>![alt text]()</center>
+![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/run%20postgres.JPG)
 
 
 the following command starts a PostgreSQL container with a default user and database, and exposes it on the host's port 5432:
