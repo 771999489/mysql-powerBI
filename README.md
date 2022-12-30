@@ -1,6 +1,6 @@
 <h1><b><i> Project_name : Link PostegresSQL with powerBI </i></b></h1>
 
-<h3>Description : </h3>
+<h3> Description : </h3>
 <p>This project consists of connecting a RDBMS (Relational Database Management System) containing a database with the power bi tool that 
 can be used to make graphical representations with the data stored in this database.
 Note that this database will be linked with a cloud computing platform provided by Microsoft that allows us to deploy and manage
@@ -16,7 +16,7 @@ This image represents our architecture that we used for the realization of our p
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/architechture%20du%20projet.JPG)
 
 
-<b>Explanation and Installation of containers<b></br>
+<h3>Explanation and Installation of containers<h3></br>
 
   <h2> 1. POSTGRES </h2>
 
@@ -33,7 +33,7 @@ To download the official postgres image from the Docker Hub registry, you can ru
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/pull%20postgres.JPG) </br>
 
 
-the following command starts a PostgreSQL container with a default user and database, and exposes it on the host's port 5432:
+The following command starts a PostgreSQL container with a default user and database, and exposes it on the host's port 5432:
 
 
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/run%20postgres.JPG) </br>
@@ -43,26 +43,32 @@ the following command starts a PostgreSQL container with a default user and data
 
 To download the official pgadmin image from the Docker Hub registry, you can run the following command:</br>
 
+
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/pull%20pgadmin.JPG) </br>
 
-To run the pgadmin image, you will need to specify a few environment variables to configure the connection to your PostgreSQL database. You can use the <b>PGADMIN_DEFAULT_EMAIL, PGADMIN_DEFAULT_PASSWORD, and PGADMIN_LISTEN_PORT</b> environment variables to set the email address and password for the default pgAdmin user, and to specify the port that the pgAdmin web server should listen on. </br>
+<p>To run the pgadmin image, you will need to specify a few environment variables to configure the connection to your PostgreSQL database. You can use the <b>PGADMIN_DEFAULT_EMAIL, PGADMIN_DEFAULT_PASSWORD, and PGADMIN_LISTEN_PORT</b> environment variables to set the email address and password for the default pgAdmin user, and to specify the port that the pgAdmin web server should listen on.</p> </br>
 
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/run%20pgadmin.JPG) </br>
 
 <h2> 3. MYSQL AND PHPMYADMIN </h2> </br>
 
-At the beginning, we wanted to use mysql and phpmyadmin to do the job but we had connection problems with the power bi tool and the mysql database of azure.<b>rror: mysql connector is missing</b>.when we had indeed installed the connector. So we decided with your agreement to continue the project with postgres and pgadmin
+<p>At the beginning, we wanted to use mysql and phpmyadmin to do the job but we had connection problems with the power bi tool and the mysql database of azure.<b>rror: mysql connector is missing</b>.when we had indeed installed the connector. So we decided with your agreement to continue the project with postgres and pgadmin.</p>
 
-<b>Explication du docker-compose.yml</b></br>
+
+<h3>Explication du docker-compose.yml</h3></br>
+
 
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/dcker-compose.JPG)
 
-You can use Docker Compose to define and run a multi-container Docker application that includes both a PostgreSQL database and pgAdmin.
+
+<p>You can use Docker Compose to define and run a multi-container Docker application that includes both a PostgreSQL database and pgAdmin.
 
 To do this, you will need to create a docker-compose.yml file that specifies the configuration for the PostgreSQL and pgAdmin containers. The file should define two services, one for PostgreSQL and one for pgAdmin, and specify the image and environment variables for each service.
-To start the PostgreSQL and pgAdmin containers, run the following command in the same directory as the docker-compose.yml file:</br>
+To start the PostgreSQL and pgAdmin containers, run the following command in the same directory as the docker-compose.yml file: </p></br>
+
 
 docker-compose up -d
+
 
 This will start the PostgreSQL and pgAdmin containers in the background, and you can access the pgAdmin web interface by opening a web browser and navigating to http://serveripadress:port. </br>
 
@@ -79,7 +85,7 @@ There are several different versions of Power BI available, including a free des
 Once you have installed Power BI, you can connect to data sources and begin creating reports and dashboards.So we are going to connect power bi to our UniversityDB database.</p></br>
 
 <h2> 1. Database Explanation </h2></br>
-<p>University_DB is a database that we set up as part of this project where we initially created a conceptual data model to be able to meet the objective of this project, which was to create dokerfiles in which we had to import libraries for the PostgreSQL DBMS and then create the database by inserting the different tables that will allow us to make visualizations with the different data that are there in these tables.
+<p> University_DB is a database that we set up as part of this project where we initially created a conceptual data model to be able to meet the objective of this project, which was to create dokerfiles in which we had to import libraries for the PostgreSQL DBMS and then create the database by inserting the different tables that will allow us to make visualizations with the different data that are there in these tables.
 In this database we have a total of five (5) tables which are: student, offering, faculty, enrollment and course.
 • Student: Inside this table we had put all the information concerning the students to know in which subject that the student is registered as well as the faculty.
 • Offering: Here in this table there is information that mentions the amount to be paid by students for each course they are registered.
@@ -89,14 +95,14 @@ In this database we have a total of five (5) tables which are: student, offering
 
 <h2> ERD </h2> </br>
 
-![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/base%20de%20donn%C3%A9es.jpg)</br>
+![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/base%20de%20donn%C3%A9es.jpg) </br>
 
-<h2> 2. Database connection with Power BI Desktop </h2></br>
+<h2> 2. Database connection with Power BI Desktop </h2> </br>
 
-![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/connexion%20%C3%A0%20la%20base%20de%20donn%C3%A9e.JPG)</br>
+![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/connexion%20%C3%A0%20la%20base%20de%20donn%C3%A9e.JPG) </br>
 
 
-![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/visualisation.JPG)</br>
+![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/visualisation.JPG) </br>
 
 
 <h3><i>Links to containers</i></h3></br>
