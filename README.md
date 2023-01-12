@@ -110,13 +110,13 @@ In this database we have a total of five (5) tables which are: student, offering
 
 <p> Portainer is a universal container management tool that can work with both Docker and Kubernetes to make the deployment and management of containerized applications and services easier and more efficient.  </p>
 
-![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/visualisation.JPG) </br>
+![alt text](https://github.com/771999489/postgresql-powerBI/blob/main/images/portainer.JPG) </br>
 
 
-![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/visualisation.JPG) </br>
+![alt text](https://github.com/771999489/postgresql-powerBI/blob/main/images/portainer%20interface.JPG) </br>
 
 
-![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/visualisation.JPG) </br>
+![alt text](https://github.com/771999489/postgresql-powerBI/blob/main/images/dashboard%20portainers.JPG) </br>
 
 
 
