@@ -50,7 +50,7 @@ To download the official pgadmin image from the Docker Hub registry, you can run
 
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/run%20pgadmin.JPG) </br>
 
-<h2> 3. MYSQL AND PHPMYADMIN </h2> </br>
+<h2> 3. POSTGRESQL AND PGADMIN </h2> </br>
 
 <p>At the beginning, we wanted to use mysql and phpmyadmin to do the job but we had connection problems with the power bi tool and the mysql database of azure.<b>rror: mysql connector is missing</b>.when we had indeed installed the connector. So we decided with your agreement to continue the project with postgres and pgadmin.</p>
 
@@ -103,6 +103,21 @@ In this database we have a total of five (5) tables which are: student, offering
 
 
 ![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/visualisation.JPG) </br>
+
+
+
+<h1> PORTAINER CONFIGURATION </h1> </br>
+
+<p> Portainer is a universal container management tool that can work with both Docker and Kubernetes to make the deployment and management of containerized applications and services easier and more efficient.  </p>
+
+![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/visualisation.JPG) </br>
+
+
+![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/visualisation.JPG) </br>
+
+
+![alt text](https://github.com/771999489/mysql-powerBI/blob/main/images/visualisation.JPG) </br>
+
 
 
 <h3><i>Links to containers</i></h3></br>
